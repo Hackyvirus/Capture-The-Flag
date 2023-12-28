@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BNB- Capture the Flag</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="" id="name">
+        <%= name %>  
+      </div>
+      <span id="Timer">2:<%= TT %></span>
+    </nav>
+    
+    
+
+    <img class="cracker1 cr" src="imges/cracker1.gif" alt="cracker" />
+    <img class="cracker5 cr" src="imges/cracker1.gif" alt="cracker" />
+    <img class="cracker2 cr" src="imges/cracker1.gif" alt="cracker" />
+
+    <div id="main-box">
+      <!-- header  -->
+
+      <header>
+        <div class="head-item1">
+          <span id="level">Level 1</span>|<span id="question">Question 1</span>
+        </div>
+        <div class="head-item">
+          <span id="joker-img">
+            <img
+              class="joker-img joker-1"
+              src="imges/joker imj.png"
+              alt="joker-img"
+            /><img
+              class="joker-img joker-2"
+              src="imges/joker imj.png"
+              alt="joker-img"
+            /><img
+              class="joker-img joker-3"
+              src="imges/joker imj.png"
+              alt="joker-img"
+            />
+          </span>
+          <span id="life"
+            >life - <img class="joker-img life1" src="imges/heart.png" alt=""
+          /></span>
+        </div>
+      </header>
+
+      <!-- main Question -->
+      <h2 id="main-question">Python keyword for defining a function ?</h2>
+
+      <!-- use joker  -->
+      <div id="joker" onclick="useJoker()">
+        Use Joker
+        <img class="joker-img" src="imges/joker imj.png" alt="Joker Img" />
+      </div>
+
+      <!-- text input  -->
+      <div id="input">
+        <input
+          type="text"
+          name="input"
+          id="input-ans"
+          autocomplete="off"
+          placeholder="Your answer...."
+        />
+        <svg
+          onclick="check()"
+          xmlns="http://www.w3.org/2000/svg"
+          width="26"
+          height="26"
+          viewBox="0 0 26 26"
+          fill="none"
+        >
+          <g clip-path="url(#clip0_50_14)">
+            <path
+              d="M23.0589 12.6554L11.9604 12.9624"
+              stroke="white"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M23.0588 12.6554L9.11478 19.5849L11.9603 12.9624L9.7611 6.47948L23.0588 12.6554Z"
+              stroke="white"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_50_14">
+              <rect
+                width="16.4576"
+                height="17.7751"
+                fill="white"
+                transform="translate(13.5659 0.837158) rotate(45.6193)"
+              />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+    </div>
+
+    <div id="score">
+      <form id="result-submit" name="result-submit" action="/A" method="post">
+        <input id="N" name="N" type="text" />
+        <input id="S" name="S" type="text" />
+        <button type="submit">submit</button>
+      </form>
+    </div>
+
+    <img class="cracker3 cr" src="imges/cracker1.gif" alt="cracker" />
+    <img class="cracker4 cr" src="imges/cracker1.gif" alt="cracker" />
+    <img class="cracker6 cr" src="imges/cracker1.gif" alt="cracker" />
+    <script src="script.js">
+    </script>
+  </body>
+</html>
