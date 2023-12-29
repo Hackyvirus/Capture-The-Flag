@@ -185,7 +185,7 @@ function check() {
 
 function useJoker() {
         joker++;
-        if (joker <= 2) {
+        if (joker <= 3) {
                 document.getElementById("joker").classList.add("used-joker-animation")
                 document.getElementById("joker").innerText = curentAnswer
                 document.getElementsByClassName("joker-" + joker)[0].style = "display:none"
